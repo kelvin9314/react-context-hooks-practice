@@ -5,6 +5,7 @@ const BookList = () => {
   const { isLightTheme, light, dark } = useContext(ThemeContext);
   console.log({ isLightTheme, light, dark });
   const theme = isLightTheme ? light : dark;
+  
   return ( 
     <div className="book-list" style={{ color: theme.syntax, background: theme.bg }}>
       <ul>
