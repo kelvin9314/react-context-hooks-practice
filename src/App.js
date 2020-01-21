@@ -10,15 +10,10 @@ import BookContextProvider from './contexts/BookContext';
 function App() {
   return (
     <div className="App">
-      <ThemeContextProvider>
-        <AuthContextProvider>
-          <Navbar />
-          <BookContextProvider>
-            <BookList />
-          </BookContextProvider>
-          <ThemeToggle />
-        </AuthContextProvider>
-      </ThemeContextProvider>
+     <BookContextProvider>
+        <Navbar />
+        {/* <BookList /> */}
+      </BookContextProvider>
     </div>
   );
 }
