@@ -8,7 +8,7 @@ import ThemeToggle from './components/ThemeToggle';
 import AuthContextProvider from './contexts/AuthContext';
 import BookContextProvider from './contexts/BookContext';
 
-function App() {
+const App = () => {
   return (
     <div className="App">
      <BookContextProvider>
