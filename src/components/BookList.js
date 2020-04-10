@@ -1,5 +1,4 @@
 import React, { useContext } from 'react';
-import { ThemeContext } from '../contexts/ThemeContext';
 import { BookContext } from '../contexts/BookContext';
 import BookDetails from "../components/BookDetails";
 
