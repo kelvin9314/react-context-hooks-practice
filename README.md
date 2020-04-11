@@ -1,6 +1,12 @@
 # react-context-hooks-practice
-> book list application
+This is going to book implement list application
+- React
+- context api
+- useReducer
+- temp data storing in localStorage
 
+```
+yarn 
 
-using : 
-- react context api
+yarn start
+```

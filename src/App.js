@@ -11,11 +11,14 @@ import BookContextProvider from './contexts/BookContext';
 const App = () => {
   return (
     <div className="App">
-     <BookContextProvider>
-        <Navbar />
-        <BookList />
-        <BookForm />
-      </BookContextProvider>
+      <ThemeContextProvider>
+        <BookContextProvider>
+          <Navbar />
+          <BookList />
+          <BookForm />
+          <ThemeToggle />
+        </BookContextProvider>
+      </ThemeContextProvider>
     </div>
   );
 }
