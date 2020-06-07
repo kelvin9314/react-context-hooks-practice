@@ -1,0 +1,21 @@
+.home-page {
+  color: thistle;
+
+  h1 {
+    margin: 0 auto;
+    text-align: center;
+    color: burlywood;
+  }
+  
+  a {
+    font-size: xx-large;
+    color: whitesmoke;
+    margin: 15px 15px;
+
+    &:hover{
+      opacity: 0.6;
+    }
+  }
+
+}
+

@@ -1,15 +1,20 @@
 import React from 'react';
-import Book from "./views/book";
+import { HashRouter, Route, Switch} from "react-router-dom";
 
-import ThemeContextProvider from './contexts/ThemeContext';
+import Book from "./views/book";
+import Home from "./views/home";
+import Memo from "./views/memo";
+
 
 const App = () => {
   return (
-    <div className="App">
-      <ThemeContextProvider>
-        {/* <Book /> */}
-      </ThemeContextProvider>
-    </div>
+    <HashRouter>
+      <Switch>
+      <Route exact path="/" component={Home} />
+      <Route exact path="/book" component={Book} />
+      <Route exact path="/memo" component={Memo} />
+      </Switch>
+    </HashRouter>
   );
 }
 
