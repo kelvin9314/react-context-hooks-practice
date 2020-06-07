@@ -1,22 +1,20 @@
 import React from 'react';
-import BookList from './components/BookList';
-import Navbar from './components/Navbar';
-import BookForm from "./components/BookForm";
+import { HashRouter, Route, Switch} from "react-router-dom";
 
-import ThemeContextProvider from './contexts/ThemeContext';
-import ThemeToggle from './components/ThemeToggle';
-import AuthContextProvider from './contexts/AuthContext';
-import BookContextProvider from './contexts/BookContext';
+import Book from "./views/book";
+import Home from "./views/home";
+import Memo from "./views/memo";
+
 
 const App = () => {
   return (
-    <div className="App">
-     <BookContextProvider>
-        <Navbar />
-        <BookList />
-        <BookForm />
-      </BookContextProvider>
-    </div>
+    <HashRouter>
+      <Switch>
+      <Route exact path="/" component={Home} />
+      <Route exact path="/book" component={Book} />
+      <Route exact path="/memo" component={Memo} />
+      </Switch>
+    </HashRouter>
   );
 }
 
